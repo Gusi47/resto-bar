@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.descripcion {
+    background-color: v.$gris;
+    width: 100%;
+    padding: 0;
+    height: 100vh;
+    @include m.flex(flex, column, center, center);
+  
+
+    &__parrafo { 
+       font-size: 2rem;
+       padding: 1.5rem;
+       text-align: center;
+       line-height: 1.5;
+      
+    }
+
+    @include m.telefono {
+        font-size: 2rem;
+        color: v.$negro;
+        margin: 0;
+        padding: 3rem;
+        line-height: 1.5;
+
+
+        &::before {
+                content: '';
+                border-bottom: 1px solid v.$negro;
+                display: block;
+                margin: 0 auto;
+                padding-top: 3rem;
+                width: 50rem;
+            
+            
+            }
+
+        &::after {
+            content: '';
+            border-bottom: 1px solid v.$negro;
+            display: block;
+            margin: 0 auto;
+            width: 50rem;
+        padding: 2rem;
+        
+
+        }
+    }
+}
+

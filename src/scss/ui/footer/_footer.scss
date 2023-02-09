@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+
+    &__contenido {
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: v.$negro;
+        margin: 2rem 0;
+        padding: 2rem 0;
+        cursor: pointer;
+       
+    }
+
+    &__parrafo {
+        font-size: 1.2rem;
+        padding: 2rem;
+        margin: 0;
+    }
+}
+
+.sociales  {
+ 
+    &__grid {
+        @include m.grid(2, 3rem); 
+        padding: 4rem;
+        @include m.tablet {
+            @include m.grid(4, 7rem);
+            padding: 4rem;
+        }
+       
+    }
+
+    img {
+        width: 7rem;
+        cursor: pointer;
+    }
+}

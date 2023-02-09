@@ -1,0 +1,127 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main {
+   
+    @include m.tablet {
+        // height: 105rem;
+
+       
+    }
+    &__grid {
+        padding: 0;
+        @include m.grid(1, 0rem);
+        
+
+         @include m.telefono {
+            @include m.grid(2, 0rem);
+            padding: 0;
+            // height: 63rem;
+         }
+    }
+
+      &__texto {
+        @include m.flex(flex, column, center, center);
+    }
+
+    h3 {
+        @include m.heading;
+        margin-top: 2rem;
+    }
+
+     &__parrafo-descripcion {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0;
+    } 
+
+    &__foto {
+        width: 100rem;
+        object-fit: cover;
+    }
+
+    &__parrafo {
+        text-align: center;
+    }
+
+      @include m.telefono {
+            &__imagenes {
+                position: relative; 
+                cursor: pointer;
+            }
+            
+            &__imagenes:hover &__contenido {
+                width: 100%;
+            }
+        
+            &__foto1 {
+                display: block;
+        
+            }
+        
+            &__contenido {
+            width: 0%;
+            height: 100%;
+            background-color: rgba(0, 0, 128, 0.3);
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            backdrop-filter: blur(4px);
+            transition: 0.4s ease-in-out;
+                
+            }
+        
+            &__parrafo {
+                color: v.$blanco;
+                font-size: 2rem;
+                padding: 3rem;
+                line-height: 1.5;
+            }
+        }
+    &__imagenes {
+        position: relative; 
+        cursor: pointer;
+    }
+    
+    &__imagenes:hover &__contenido {
+        width: 100%;
+    }
+
+    &__foto1 {
+        display: block;
+
+    }
+
+    &__contenido {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 128, 0.3);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    transition: 0.4s ease-in-out;
+        
+    }
+
+    &__parrafo {
+        color: v.$blanco;
+        font-size: 2rem;
+        padding: 3rem;
+        line-height: 1.5;
+    }
+    
+    
+}
+
+
+
+
+

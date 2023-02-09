@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.equipo {
+ 
+ 
+    &__grid {
+        @include m.grid(1, 0rem);
+        
+    }
+
+    &__foto {
+        width: 100%;
+        height: auto;
+    }
+
+    &__texto {
+        text-align: center;
+    }
+
+    h5 {
+        @include m.heading;
+        padding: 5rem 0 1rem 0;
+       
+    }
+
+    &__parrafo {
+        font-size: 2rem;
+        padding: 2rem;
+        margin: 0;
+    }
+}

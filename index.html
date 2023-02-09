@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeResto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <header class="header ">
+      
+    <div class="header__barra">
+          <div class="header__h1">
+          <h1>Le<span>Resto</span></h1>
+         </div>
+    <div class="header__flex">
+        <img id="boton" class="header__svg" src="build/img/barras.svg" alt="menu">
+
+        <div class="header__navegacion">
+          <nav id="navega" class="header__nav">
+            <a class="header__link" href="#cockteleria">Cockteleria</a>
+            <a class="header__link" href="#menu">Menu</a>
+            <a class="header__link" href="#horarios">Dias y Horarios</a>
+            <a class="header__link" href="#desayunos">Breakfast Delivery</a>
+            <a class="header__link" href="#el equipo">El Equipo</a>
+            <a class="header__link" href="#contacto">Contacto</a>
+          </nav>
+         </div>
+       </div>
+     </div>  
+
+      <div class="contenido">
+        <div class="contenido__tranasparente">
+          <h2 class="contenido__titulo">Bienvenidos</h2>
+        </div>
+        <p class="contenido__texto">
+          A un mundo donde la diferencia la hacemos nosotros, para ustedes.
+        </p>
+        </div>
+       
+    </header>
+
+    <section id="cockteleria" class="cockteleria scroll">
+      <div class="cockteleria__imagen" >
+        
+      </div>
+
+      <div class="cockteleria__contenido">
+        <h2 class="cockteleria__heading">Cocktail Barman</h2>
+        <p class="cockteleria__parrafo">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rem
+          sunt aperiam quis, cupiditate blanditiis autem deserunt ut similique
+          at quas itaque magni ad rerum, modi placeat! Nostrum, doloribus sint?
+          blanditiis autem deserunt ut similique at quas itaque magni ad rerum,
+          modi placeat! Nostrum, doloribus sint?
+        </p>
+      </div>
+    </section>
+
+    <section class="descripcion">
+      <p class="descripcion__parrafo">
+        <br />
+        SITUADO EN UNA VIBRANTE CALLE PEATONAL DEL MERCADO, CARAVAN EXMOUTH
+        MARKET ES UN ESPACIO LUMINOSO Y AIREADO CON FACHADA ACRISTALADA EN DOS
+        LADOS Y UNA TERRAZA EXTERIOR EN EL MERCADO. CON NUESTRO CARACTERÍSTICO
+        DESAYUNO Y MENÚS DE COMIDA Y BEBIDA DURANTE TODO EL DÍA, JUNTO CON
+        NUESTRO CAFÉ RECIÉN TOSTADO DE LA TOSTADORA DE CARAVAN, NUESTRO ESTILO
+        ES ABIERTO, RELAJADO Y AMISTOSO. VENGA A TOMAR UN CAFÉ CON EL PERIÓDICO
+        DE LA MAÑANA, UN CÓCTEL Y PEQUEÑOS PLATOS POR LA NOCHE Y CUALQUIER COSA
+        ENTRE MEDIAS.
+      </p>
+    </section>
+
+    <!-- comida -->
+
+    <main id="menu" class="main">
+
+    <div class="main__grid">
+      <div class="main__texto" data-aos="flip-left">
+        <h3>Menu</h3>
+        <p class="main__parrafo-descripcion">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rem
+          sunt aperiam quis, cupiditate blanditiis autem deserunt ut similique
+          at quas itaque magni ad rerum, modi placeat! Nostrum, doloribus sint?
+          blanditiis autem deserunt ut similique at quas itaque magni ad rerum,
+          modi placeat! Nostrum, doloribus sint?
+        </p>
+      </div>
+
+      <div class="main__imagenes" data-aos="fade-right">
+          <img class="main__foto1" src="build/img/comida_1.jpg" alt="foto menu">
+        <div class="main__contenido">
+          <p class="main__parrafo">
+            Carne Grillada: Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Rerum facilis quas quibusdam eum tenetur
+          </p>
+        </div>
+      </div> 
+
+      <div class="main__imagenes" data-aos="fade-right">
+        <img class="main__foto" src="build/img/comida_2.jpg" alt="foto menu">
+        <div class="main__contenido">
+          <p class="main__parrafo">
+            Codorniz a la Romana: Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Rerum facilis quas quibusdam eum tenetur
+          </p>
+        </div>
+      </div>
+
+      <div class="main__imagenes" data-aos="fade-left">
+        <img class="main__foto" src="build/img/comida_3.jpg" alt="foto menu">
+        <div class="main__contenido">
+          <p class="main__parrafo">
+            Pollo con salsa de la casa: Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Rerum facilis quas quibusdam eum tenetur
+          </p>
+        </div>
+      </div>
+    </div>
+   </main>
+
+   <section id="horarios" class="calendario">
+    <div class="calendario__grid">  
+        <div class="calendario__flex">
+          <div>
+            <h4>Reservas</h4>
+          </div>
+          <div class="calendario__horarios">
+              <label  for="date">Fecha</label>
+              <input type="date" placeholder="Tu Cita">
+              <label  for="date">Hora</label>
+             <input  id="date" type="time" placeholder="Tu Cita">
+            </div>
+        </div>
+  
+          <div class="horarios">
+            <div class="calendario__flex">
+              <div>
+                <h4>Dias y Horarios</h4>
+              </div>
+              <div>
+                 <ul  class="direccion__listas">
+                      <li class="horario__lista">
+                        Jueves y Viernes de  <span class="span-hora">7:00 0a 23:00</span>
+                      </li>
+                        <li  class="horario__lista">
+                        Sabados de <span class="span-hora">7:00 a 03:00</span>
+                      </li>
+                      <li  class="horario__lista">
+                        Domingos de <span class="span-hora">7:00 a 23:00</span>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+          </div>       
+
+
+        <div class="direccion">
+          <div class="calendario__flex">
+            <div>
+            <h4>Direccion y Tel.</h4>
+          </div>
+          <div>
+           <ul class="direccion__lista">
+            <li class="calendario__li">
+              Via Vitorio Emaluell 47
+            </li>
+              <li  class="calendario__li">
+              Tel: 438784954
+            </li>
+           </ul>
+         </div>
+        </div>
+     </div>        <!-- fin dias y horarios  -->
+</div>
+</section>
+<section class="mapa">
+    <div class="mapa__div">
+       <iframe class="mapa__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12556.174169146228!2d13.356803599377479!3d38.11592140000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1319e58b1f65c5c7%3A0x68b4222a22e0d107!2sB%26B%20Hotel%20Palermo%20Quattro%20Canti!5e0!3m2!1sen!2sit!4v1645552810164!5m2!1sen!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div> 
+</section>
+ 
+
+<section id="desayunos" class="desayunos">
+    <div class="desayunos__grid">
+        <div class="desayunos__flex">
+            <h3 class="desayunos__heading">Breakfast Delivery</h3>
+            <p class="desayunos__parrafo1">Ahora podes acceder a nuestro nuevo servicio de Delivery de Desayunos.</p>
+            <p class="desayunos__parrafo2">De Martes a Domingos de <span>7:00 AM</span> a <span>10:00 AM</span></p>
+        </div>
+
+      <div class="desayunos__imagenes">
+          
+            <img loading="lazy" class="desayunos__foto" src="build/img/desayuno 5.jpg" alt="foto comida">
+            <img loading="lazy" class="desayunos__foto" src="build/img/desayuno 6.jpg" alt="foto comida">
+            <img loading="lazy" class="desayunos__foto" src="build/img/desayuno 7.jpg" alt="foto comida">
+            <img loading="lazy" class="desayunos__foto" src="build/img/desayuno 8.jpg" alt="foto comida">
+          
+      </div>
+  </div>
+</section>
+
+<section id="el equipo" class="equipo">
+      <div class="equipo__grid">
+        <div class="equipo__texto">
+            <h5>El Equipo</h5>
+            <p class="equipo__parrafo">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem magni tempora error perferendis et 
+              vel maxime, animi accusantium, minus ipsum eveniet aliquam cupiditate laudantium non eum veritatis,
+                facilis fugiat ipsam.
+            </p>
+      </div>
+      <div loading="lazy" class="equipo__imagen" data-aos="fade-down">
+          <img class="equipo__foto" src="build/img/foto_equipo.jpg" alt="foto equipo">
+      </div>
+    </div>
+ </section>
+
+ <!-- Formulario -->
+
+
+<section id="contacto" class="contacto">
+
+  <h6 class="contacto__heading">Contacto</h6>
+
+  <form class="formulario" action="https://formsubmit.co/facucostafotografia@gmail.com" method="post">
+    <div class="formulario__grid">
+     <fieldset class="formulario__field">
+
+          <legend>Tus Datos</legend>
+
+            <div class="formulario__campos">
+              <label for="nombre">Nombre</label>
+              <input class="formulario__imput" id="nombre" name="nombre" type="text" placeholder="Tu Nombre" required>  <!-- required es campo obligatorio-->
+            </div>
+
+            <div class="formulario__campos">
+              <label for="apellido">Apellido</label>
+              <input class="formulario__imput" id="apellido" type="text"  surname="apellido" placeholder="Tu Apellido" required>
+            </div>
+
+            <div class="formulario__campos">
+              <label for="mail">E-mail</label>
+              <input  class="formulario__imput" id="mail" type="email" name="email" placeholder="Email Address">
+            </div>
+<!-- 
+            <div class="formulario__campos">
+              <label for="telefono">Telefono</label>
+              <input  class="formulario__imput" id="telefono" type="tel" placeholder="Tu Telefono" required>
+            </div> -->
+
+            <div class="formulario__campos">
+              <label for="mensaje">Mensaje</label>
+            <textarea class="formulario__imput" id="mensaje" cols="30" rows="10">Mensaje</textarea>
+            </div>
+            
+     </fieldset>
+
+     <input class="formulario__submit" type="submit">
+
+    </form>
+     <div class="sociales">
+          <div class="sociales__grid">
+            <a href="https://www.instagram.com/"> <img class="sociales__img" src="build/img/facebook-.png" alt="icono fac"></a>
+        
+            <a href="https://www.instagram.com/"> <img class="sociales__img" src="build/img/instagram-.png" alt="icono fac"></a>
+          
+            <a href="https://www.youtube.com/"> <img class="sociales__img"  src="build/img/youtube-.png" alt="icono fac"></a>
+
+            <a href="https://www.twitter.com/"> <img class="sociales__img"  src="build/img/twitter-.png" alt="icono fac"></a>
+          </div>
+      </div>
+
+</section>
+
+
+  <footer class="footer">
+    
+    <a class="footer__contenido" href="#">TOP</a>
+
+   
+        <p class="footer__parrafo">
+        © 2022 LE-RESTO RESTAURANTS. ALL RIGHTS RESERVED.   DESIGN FROM WITHOUT ®
+      </p>
+    </div>
+  </footer>
+
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1500
+      });
+    </script>
+  </body>
+</html>

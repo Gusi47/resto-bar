@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.desayunos {
+
+   &__grid {
+       @include m.grid(1, 0rem);
+
+       @include m.tablet {
+        @include m.grid(2, 0rem);
+       }
+   }
+
+   &__flex {
+       @include m.flex(flex, column, center, center);
+   }
+
+   &__heading {
+    @include m.heading;
+    margin-top: 3rem;
+    font-size: 3rem;
+
+    @include m.tablet {
+        font-size: 4rem;
+    }
+   }
+
+   &__parrafo1, &__parrafo2  {
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 1.5rem;
+    margin: 0;
+    text-align: center;
+   }
+
+   &__imagenes {
+    @include m.grid(2, 0rem);
+   }
+
+   span {
+       font-weight: bold;
+   }
+   &__foto {
+       width: 35rem;
+       height: auto;
+   }
+
+}

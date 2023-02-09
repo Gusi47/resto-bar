@@ -1,0 +1,96 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+  height: 100vh;
+
+    @include m.bgImage('../img/foto_tapa_list_,2.jpg');
+    
+
+    &__barra {
+      @include m.flex(flex, column, space-between, center);
+      flex-wrap: wrap;
+      margin: 0 auto;
+      @include m.tablet {
+        @include m.flex(flex, row, space-between, center);
+        flex-wrap: nowrap;
+      }
+    }
+   
+    h1 {
+        
+        font-size: 9rem;
+        color: v.$primario;
+        padding-top: 1rem;
+        margin: 0 0 2rem 0;
+    }
+   
+  
+
+    &__svg {
+      width: 5rem;
+      height: 5rem;
+      margin: 0 auto;
+      cursor: pointer;
+      fill: v.$blanco;
+      @include m.tablet {
+        display: none;
+      }
+      
+    }
+
+    &__navegacion {
+      width: 100%; 
+    }
+
+    &__nav {
+      border-radius: 1rem;
+      width: 100%;
+      height: 0vh;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+     
+      // display: none;
+      @include m.flex(flex, column, space-between, center);
+      @include m.tablet {
+        height: 100%;
+        opacity: 1;
+      }
+   }
+
+   .activo {
+    // display: flex;
+    opacity: 1;
+    width: 100%;
+    height: 50vh;
+   }
+   
+     &__nav {
+        @include m.tablet {
+        @include m.flex(flex, row, space-between, center);
+       }
+     }
+
+     &__link {
+     color: v.$blanco;
+     font-size: 2rem;
+     margin-top: 2rem;
+     
+     transition: 300ms ease-in-out;
+     &:hover {
+       background-color: v.$gris;
+       color: v.$negro;
+       transform: scale(1.2);
+       border-radius: 0.4rem;
+     }
+
+     @include m.tablet {
+      margin: 0 1.5rem 0 1.5rem;
+      padding: 0.5rem;
+    } 
+  }
+}
+
+
+
